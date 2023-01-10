@@ -1,0 +1,137 @@
+@import url('https://fonts.googleapis.com/css2?family=Khula:wght@400;600&display=swap');
+
+/* consistent font over the web page  */
+body {
+	font-family: 'Khula', sans-serif !important;
+}
+
+:root {
+	--paragraph-font-size: 1.3rem;
+	--heighlight-p-font-size: 1.6rem;
+	--heading-font-size: 3.2rem;
+	--money-font-size: 4.8rem;
+	--subheading-font-size: 1.8rem;
+	--btn-width: 140px;
+	--img-width: 150px;
+}
+/* expanding first layout region to cover full width of flex box */
+.haider_layout__region--first {
+	flex-grow: 1 !important;
+}
+
+.page-header > span {
+	text-align: left;
+	font-size: var(--subheading-font-size);
+}
+
+/* font size for all h1s */
+h1 {
+	font-size: var(--heading-font-size);
+}
+
+/* coin dcx pitch section  */
+.haider_pitch-coin-dcx > span {
+	text-align: left;
+	font-size: var(--subheading-font-size) !important;
+}
+
+/* pitch section paragraph */
+.haider_pitch-coin-dcx > p {
+	font-size: var(--paragraph-font-size);
+}
+
+/* apply button styles on pitch and faq section  */
+.apply_btn {
+	border: none;
+	padding: 0.7rem 1.2rem;
+	border-radius: 0.8rem;
+	font-size: var(--paragraph-font-size);
+	background-color: #407bff;
+	color: white;
+	width: var(--btn-width);
+}
+
+/* chaging block title's styles  */
+.block-title {
+	text-align: center;
+	font-weight: bold;
+	font-family: 'Khula', sans-serif !important;
+	color: rgb(77, 77, 77) !important;
+}
+
+/* styles for coin-dcx promo section */
+.haider_promo_section {
+	display: flex;
+	flex-direction: column;
+	gap: 3rem;
+	justify-content: center;
+	align-items: center;
+	margin: 3rem 0 !important;
+}
+
+/* aligning items of promo section  */
+.haider_promo_section p,
+h3,
+span {
+	display: block;
+	text-align: center;
+}
+
+/* individual styles form promo section  */
+.haider_promo_section p {
+	font-size: var(--heighlight-p-font-size);
+	font-weight: bold;
+	color: grey;
+}
+
+.haider_promo_section h3 {
+	font-size: var(--money-font-size);
+	font-weight: bold;
+}
+
+.coin_dcx_img {
+	width: var(--img-width);
+	margin-inline: auto;
+}
+
+/* gradient divider  */
+.divider {
+	width: 100%;
+	height: 2px;
+	background: linear-gradient(to right, transparent, black, transparent);
+}
+
+.block-views-blockprograms-block-6 > h2 {
+	text-align: left;
+	font-size: var(--subheading-font-size);
+}
+
+.block-views-blockprograms-block-6 .view-content {
+	font-size: var(--paragraph-font-size);
+}
+
+@media only screen and (min-width: 720px) {
+	:root {
+		--paragraph-font-size: 1.6rem;
+		--heighlight-p-font-size: 1.8rem;
+		--heading-font-size: 4.5rem;
+		--money-font-size: 6rem;
+		--subheading-font-size: 2.6rem;
+		--btn-width: 20%;
+		--img-width: 150px;
+	}
+	.haider_promo_section {
+		flex-direction: row;
+	}
+	.divider {
+		height: 200px;
+		width: 2px;
+		background: linear-gradient(to bottom, transparent, black, transparent);
+	}
+}
+.view-content {
+	justify-content: center;
+}
+.program-view-mentor-profile {
+	border-radius: 0.6rem;
+}
